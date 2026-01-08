@@ -21,6 +21,7 @@ opcion=0
 while opcion<=4:
     opcion=opcion+1
     ingrediente= input(f"ingresa la opcion {opcion} de ingrediente: ")
+    print("ingrediente agregado a la pizza")
     ingredientes.append(ingrediente)
 
 
