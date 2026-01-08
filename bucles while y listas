@@ -1,0 +1,27 @@
+"ejecutamos el bucle while con la sentencia continue para imprimir solo lso numeros impares"
+
+contador = 0
+
+while contador <= 10:
+    contador=contador+1
+    if contador % 2 ==  0:
+        continue
+    print(contador)
+
+"""7-4. Ingredientes de pizza: Escriba un bucle que pida al usuario que
+introduzca una serie de ingredientes de pizza y termine escribiendo el valor 'quit
+'. Cuando introduzca cada ingrediente, imprima un mensaje diciendo
+que lo añadirá a su pizza."""
+
+print("ingresa los ingredientes uno por uno para ir agregandolos a la pizza\nNota:solo puedes agregar 5 ingredientes.")
+
+ingredientes=[]
+opcion=0
+
+while opcion<=4:
+    opcion=opcion+1
+    ingrediente= input(f"ingresa la opcion {opcion} de ingrediente: ")
+    ingredientes.append(ingrediente)
+
+
+print(f"los ingredientes de la pizza son\n{ingredientes}")
