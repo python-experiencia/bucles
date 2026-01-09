@@ -1,0 +1,10 @@
+usu_sin_confirmar=["sebas","gloria","daniela"]
+usuarios_confirmados=[]
+
+while usu_sin_confirmar:
+    usuarios=usu_sin_confirmar.pop()
+    print(f"usuario confirmado {usuarios}")
+
+    usuarios_confirmados.append(usuarios)
+
+print(f"los usuarios confirmados son \n{usuarios_confirmados}")
