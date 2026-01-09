@@ -1,0 +1,30 @@
+"""7-5. Entradas de cine: Un cine cobra las entradas a distinto precio en
+función de la edad del espectador. Los menores de 3 años entran gratis, los
+niños de entre 3 y 12 años pagan 8 euros y la entrada para mayores de 12
+años cuesta 12 euros. Escriba un bucle para preguntar a los usuarios su edad
+y luego dígales el precio de su entrada."""
+
+print("Entradas de cine \nValores \nmenosres de 3 años - gratis \nentre 3 a 12 años - 8 euros \nmayores de 12 años - 12 euros")
+
+
+while True:
+    entrada=input("ingresa tu edad: ")
+
+    if entrada.isdigit():
+        edad=int(entrada)
+        if edad < 3:
+            print("la entrada es gratis")
+            valor="gratis"
+            break
+        elif edad >= 3 and edad <=12:
+            print("la entrada es 8 euros")
+            valor=8
+            break
+        elif edad > 12:
+            print("la entrada es 12 euros")
+            valor=12
+            break
+    else:
+         print("el valor ingresado no es un numero o la edad\nintentelo de nuevo.")
+
+print(f"el valor para la edad {edad} años es de {valor} euros")
