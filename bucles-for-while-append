@@ -1,0 +1,31 @@
+""" 7-8. Bocatería: Haga una lista llamada 
+pedidos_bocadillos
+ y rellénela con
+los nombres de varios bocadillos. A continuación, haga una lista vacía
+llamada 
+bocadillos_terminados
+. Pase en bucle por la lista de pedidos de
+bocadillos e imprima un mensaje para cada pedido, como "Su bocadillo de
+atún está listo". A medida que se hagan los bocadillos, páselos a la lista de
+terminados. Cuando todos los bocadillos estén hechos, imprima un mensaje
+que los enumere todos.
+"""
+
+pedidos_bocadillos = ["guayaba","arequipe","melao","cocacola"]
+pedidos_terminados=[]
+
+for bocadillo in pedidos_bocadillos:
+    print(f"su bocadillo de {bocadillo} esta listo")
+    pedidos_terminados.append(bocadillo)
+
+print(f"la lista de bocadillos terminados perfectamente son {pedidos_terminados}")
+
+"con while"
+pedido_terminado=[]
+bocadillos=[]
+while pedidos_bocadillos:
+    bocadillos=pedidos_bocadillos.pop()
+    print(f"bocadillo de {bocadillos} terminado completamente")
+    pedido_terminado.append(bocadillos)
+print(f"la lista de bocadillos terminados perfectamente son {pedido_terminado}")
+
