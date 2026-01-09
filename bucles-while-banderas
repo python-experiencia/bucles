@@ -1,0 +1,43 @@
+usu_sin_confirmar=["sebas","gloria","daniela"]
+usuarios_confirmados=[]
+
+while usu_sin_confirmar:
+    usuarios=usu_sin_confirmar.pop()
+    print(f"usuario confirmado {usuarios}")
+
+    usuarios_confirmados.append(usuarios)
+
+print(f"los usuarios confirmados son \n{usuarios_confirmados}")
+
+
+"remove para eliminar cualquier objeto (cat) de una lista con bucle"
+pets=['dog', 'cat', 'dog', 'goldfish', 'cat', 'rabbit', 'cat']
+
+while 'cat' in pets:
+    pets.remove("cat")
+print(pets)
+
+"hacer un diccionario con las entradas de los ussuarios"
+
+print()
+print('-'*20)
+print('si quieres salir del programa o no hay mas ususarios presiona solo ENTER')
+
+bandera=True
+usuarios1={}
+
+while bandera:
+    nombre=input("introduzca su nombre: \n")
+    respuesta=input("¿te gusta el basquet? yes/no: ")
+    pregunta=input("desea seguir ? yes/no: ")
+    usuarios1[nombre]=respuesta
+
+    if pregunta == "no":
+        print("presionaste salir")
+        bandera=False
+    else:
+        bandera=True
+
+print(f"el diccionario de ususarios y respuestas es {usuarios1}")
+
+
